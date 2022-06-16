@@ -1,0 +1,150 @@
+:root {
+    --primary-color: rgba(1, 24, 50, 0.75);
+    --overlay-color: rgba(24, 39, 1, 0.85);
+    --menu-speed: 0.75s;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:'Roboto', sans-serif;
+    line-height: 1.4;
+}
+
+/* ---- Burger Menu ---- */
+
+.burger-container {
+    max-width: 960px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.showcase {
+    background-color:var(--primary-color);
+    color: #fff;
+    height: 100vh;
+    position: relative;
+    /* display: flex; */
+}
+
+.showcase-right-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.showcase:before {
+    content: '';
+    color: grey;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.showcase .showcase-inner {
+    text-align: center;
+    height: 100%;
+}
+
+.showcase h1 {
+    font-size: 4rem;
+    line-height: 5rem;
+    margin-top: 2rem;
+}
+
+.showcase p {
+    font-size: 1.3rem;
+    margin: 0.5rem;
+
+}
+
+.showcase .btn {
+    display: inline-block;
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    transition: opacity 1s ease-in;
+}
+
+.showcase .btn:hover {
+    opacity: 0.7;
+}
+
+
+.header-logo {
+    display: none;
+    align-items: center;
+}
+
+.mobile-profile-img {
+    margin: 0;
+    border-radius: 50%;
+    border-width: 2px;
+    border-style: solid;
+    text-align: center;
+    margin-top: 3rem;
+    width: auto;
+    height: 60%;
+}
+
+.mobile-img-div {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 1024px){
+    .header-title {
+        display: none;
+    }
+
+    .dn {
+        display: none;
+    }
+
+    .header-logo {
+        display: block;
+    }
+
+    .burger-container {
+        display: block;
+        width: 100%;
+        margin: 0;
+        height: 20vh;
+        margin: 0 auto;
+    }
+
+    .show
+
+    .mobile-profile-img {
+        position: static;
+        height: 200px;
+        width: auto;
+        top: 0;
+        margin-bottom: 1rem;
+    }
+
+    .showcase-right-col {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+}
