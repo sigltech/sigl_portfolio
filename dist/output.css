@@ -620,6 +620,10 @@ video {
   justify-content: flex-end;
 }
 
+.display-inline-block {
+  display: inline-block;
+}
+
 .p-3 {
   padding: 0.75rem;
 }
@@ -649,6 +653,11 @@ video {
 .text-cyan-900 {
   --tw-text-opacity: 1;
   color: rgb(22 78 99 / var(--tw-text-opacity));
+}
+
+.text-cyan-100 {
+  --tw-text-opacity: 1;
+  color: rgb(207 250 254 / var(--tw-text-opacity));
 }
 
 .opacity-100 {
