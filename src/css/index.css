@@ -59,87 +59,7 @@ h1 {
     cursor: pointer;
 }
 
-
-/* ---- Burger Menu ---- */
-
-.burger-container {
-    max-width: 960px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-}
-
-.showcase {
-    background-color:var(--primary-color);
-    color: #fff;
-    height: 100vh;
-    position: relative;
-    /* display: flex; */
-}
-
-.showcase-right-col {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 7rem;
-    width: 100%;
-    animation-name: slideinright;
-    animation-duration: 2s;
-}
-
-@keyframes slideinright {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
-
-.showcase:before {
-    content: '';
-    color: grey;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-.showcase .showcase-inner {
-    text-align: center;
-    height: 100%;
-}
-
-.showcase h1 {
-    font-size: 4rem;
-    line-height: 5rem;
-    margin-top: 2rem;
-}
-
-.showcase p {
-    font-size: 1.3rem;
-    margin: 0.5rem;
-
-}
-
-.showcase .btn {
-    display: inline-block;
-    border: none;
-    background-color: var(--primary-color);
-    color: #fff;
-    padding: 0.75rem 1.5rem;
-    margin-top: 1rem;
-    text-decoration: none;
-    transition: opacity 1s ease-in;
-}
-
-.showcase .btn:hover {
-    opacity: 0.7;
-}
+/* *************** Header Styling ******************** */
 
 header {
     background-color: rgba(26, 58, 93, 0.75);
@@ -200,7 +120,95 @@ header {
     align-items: center;
 }
 
-.mobile-profile-img {
+
+/* ****************** Burger Menu ****************** */
+
+.burger-container {
+    max-width: 960px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+
+/* ************** Section 1 styling ***************** */
+
+.showcase {
+    background-color:var(--primary-color);
+    color: #fff;
+    height: 100vh;
+    position: relative;
+}
+
+.showcase-right-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 7rem;
+    width: 100%;
+    animation-name: slideinright;
+    animation-duration: 2s;
+}
+
+@keyframes slideinright {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.hero-h1 {
+    color: aqua;
+}
+
+.showcase:before {
+    content: '';
+    color: grey;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.showcase .showcase-inner {
+    text-align: center;
+    height: 100%;
+}
+
+.showcase h1 {
+    font-size: 4rem;
+    line-height: 5rem;
+    margin-top: 2rem;
+}
+
+.showcase p {
+    font-size: 1.3rem;
+    margin: 0.5rem;
+
+}
+
+.showcase .btn { /* section 1 btn styling */
+    display: inline-block;
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    transition: opacity 0.2s ease-in; /* hover opacity animation */
+}
+
+.showcase .btn:hover {
+    opacity: 0.6;
+}
+
+.mobile-profile-img { /* main image styling */
     position: relative;
     margin: 0;
     align-items: center;
@@ -216,7 +224,7 @@ header {
     box-shadow: 0.5px 0.5px 5px 2px;
 }
 
-.mobile-img-div {
+.mobile-img-div { /* main image div styling */
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -226,7 +234,7 @@ header {
     animation-name: slideinleft;
 }
 
-@keyframes slideinleft {
+@keyframes slideinleft { /* Slide in animation for main image */
     from {
         transform: translatex(-100%);
     }
@@ -235,7 +243,7 @@ header {
     }
 }
 
-/* media queries */
+/* ********************* media queries ********************* */
 
 @media only screen and (max-width: 1024px){
 

@@ -660,6 +660,10 @@ video {
   color: rgb(207 250 254 / var(--tw-text-opacity));
 }
 
+.text-aqua {
+  color: aqua;
+}
+
 .opacity-100 {
   opacity: 1;
 }
