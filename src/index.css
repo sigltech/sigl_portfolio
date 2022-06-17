@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@400;700&display=swap');
 @import './menu.css';
 @import './index-section2.css';
 
 :root {
     --primary-color: rgba(1, 24, 50, 0.75);
+    --secondary-color: rgba(1, 48, 102, 0.75);
     --overlay-color: rgba(24, 39, 1, 0.85);
+    --primary-font: 'Anek Malayalam', sans-serif;
     --menu-speed: 0.75s;
 }
 
@@ -15,7 +18,7 @@
 }
 
 body {
-    font-family:'Roboto', sans-serif;
+    font-family:var(--primary-font);
     line-height: 1.4;
     cursor: default;
 }
@@ -23,6 +26,39 @@ body {
 h1 {
     margin: 0;
 }
+
+/* *********** Socials tab styling **************** */
+
+
+.socials {
+    position: fixed;
+    right: 15px;
+    top: 150px;
+    z-index: 1;
+}
+
+.socials-tab {
+    display: flex;
+    flex-direction: column;
+}
+
+.socials-tab li {
+    margin: 0.2rem 0;
+}
+
+.socials-tab li img {
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    width: 50px;
+}
+
+.socials-tab li img:hover {
+    box-shadow: 1px 1px 10px 2px #fff;
+    cursor: pointer;
+}
+
 
 /* ---- Burger Menu ---- */
 
@@ -162,7 +198,7 @@ header {
     border-style: solid;
     border-color: rgb(255, 255, 255,0.3);
     margin-top: 3rem;
-    width: 45%;
+    width: 75%;
 }
 
 .mobile-profile-img:hover {
@@ -171,10 +207,10 @@ header {
 
 .mobile-img-div {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
     width: 100%;
-    margin-top: 7rem;
+    margin-top: 2rem;
 }
 
 /* media queries */
@@ -205,12 +241,22 @@ header {
         margin: 0 auto;
     }
 
+    .mobile-profile-img {
+        width: 45%;
+    }
+
     .mobile-img-div {
         margin: auto;
     }
 
     .showcase h1 {
         margin-top: 0;
+        font-size: 3rem;
+    }
+
+    .showcase p {
+        margin-top: 0;
+        font-size: 1.2rem;
     }
 
     .showcase-right-col {
