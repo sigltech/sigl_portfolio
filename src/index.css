@@ -85,6 +85,17 @@ h1 {
     align-items: center;
     margin-top: 7rem;
     width: 100%;
+    animation-name: slideinright;
+    animation-duration: 2s;
+}
+
+@keyframes slideinright {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
 }
 
 .showcase:before {
@@ -211,6 +222,17 @@ header {
     align-items: flex-start;
     width: 100%;
     margin-top: 2rem;
+    animation-duration: 2s;
+    animation-name: slideinleft;
+}
+
+@keyframes slideinleft {
+    from {
+        transform: translatex(-100%);
+    }
+    to {
+        transform: translatex(0);
+    }
 }
 
 /* media queries */
