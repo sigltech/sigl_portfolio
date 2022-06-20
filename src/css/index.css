@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@400;700&display=swap');
+@import './projects.css';
 @import './menu.css';
 @import './index-section2.css';
 
@@ -137,7 +138,7 @@ header {
 .showcase {
     background-color:var(--primary-color);
     color: #fff;
-    height: 100vh;
+    min-height: 90vh;
     position: relative;
 }
 
