@@ -1,9 +1,19 @@
+
 body {
-    background-color: var(--primary-color);
+    background-color: var(--primary-color) !important;
     color: #ffffff;
 }
 
+html {
+    background-color: var(--primary-color);  
+}
+
+main {
+    height: 77vh;
+}
+
 .swiper {
+    padding-bottom: 0;
     height: 500px;
     width: 1000px;
     margin-top: 5rem;
